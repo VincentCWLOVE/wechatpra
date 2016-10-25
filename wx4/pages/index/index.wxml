@@ -1,0 +1,6 @@
+<scroll-view class="ui_menu" scroll-y="true">
+    <view class="cell" wx:for="{{lists}}" bindtap="cellClick" id="{{index}}">
+        <text class="ui_name">{{item.name}}</text>
+        <text class="ui_des">{{item.des}}</text>
+    </view>
+</scroll-view> 

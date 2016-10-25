@@ -1,0 +1,49 @@
+.warp {
+    display: flex;
+    flex-direction: column;
+}
+.header , .footer {
+   flex: 1; 
+   background-color: black;
+   color: white;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+.main {
+    flex: 1;  
+}
+.left , .right {
+    flex: 0 0 12rem;
+    max-width: 100px;
+}
+.left {
+    order: -1;
+}
+
+@media (max-width: 768px) {
+    .content {
+    flex-direction: column
+    }
+    .main,.left,.right {
+        flex:auto;
+    }
+    .left , .right {
+        max-width: 100%;
+    }
+}
+
+
+/*添加背景颜色*/
+.main{
+    background-color: orange;
+}
+.left {
+   
+    background-color: blue;
+}
+.right {
+    background-color: red;
+}
