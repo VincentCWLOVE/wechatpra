@@ -19,7 +19,7 @@ Page({
       {name:"switch",des:"开关选择器"}
       ]
   },
-
+//  表示点击 `cell` 将跳转到对应详情页 
   cellClick: function(e){
     console.log(e.currentTarget.id);
      wx.navigateTo({
