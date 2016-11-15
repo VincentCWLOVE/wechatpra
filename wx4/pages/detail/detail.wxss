@@ -92,7 +92,7 @@ scroll-view 组件样式
     display: inline-block;
     margin: 10px 20px;
     width: 90%;
-    height: 200px;
+    height: 10rem;
     border: #e9e9e9 solid 1px;
     text-align: center;
     background-color: red;

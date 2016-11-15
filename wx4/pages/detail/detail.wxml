@@ -46,7 +46,7 @@
    
 </block>
 
-<!--scroll-view组件-->
+<!--swiper组件-->
 <block wx:if="{{index == 2}}">
   <swiper class="swiper_class" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}} " bindchange="bindchangeTag">
     <block wx:for="{{imgs}}">
@@ -55,4 +55,26 @@
         </swiper-item>
     </block>
  </swiper> 
+</block>
+
+<!--icon组件-->
+<block wx:if="{{index == 3}}">
+    <view class="group">
+    <block wx:for="{{iconSize}}">
+        <icon type="success" size="{{item}}"/>
+    </block>
+    </view>
+
+    <view class="group">
+    <block wx:for="{{iconType}}">
+        <icon type="{{item}}" size="45"/>
+    </block>
+    </view>
+
+
+    <view class="group">
+    <block wx:for="{{iconColor}}">
+        <icon type="success" size="45" color="{{item}}"/>
+    </block>
+    </view>
 </block>
