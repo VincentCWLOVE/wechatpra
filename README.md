@@ -6,6 +6,24 @@
 - [小程序开发者工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html)
 
 
+### 小程序脚手架
+``` bash
+
+#安装
+npm install wxapp -g
+
+#创建小程序项目
+wxapp init projectName
+
+#运行项目：
+cd projectName
+npm install
+npm run dev
+
+```
+
+
+
 ### 目录
 
 - [文件介绍](https://vincentcwlove.github.io/2016/10/18/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6%E4%BB%8B%E7%BB%8D/)
