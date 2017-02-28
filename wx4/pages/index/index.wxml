@@ -1,6 +1,6 @@
 <scroll-view class="ui_menu" scroll-y="true">
 <!--添加id属性 id="{{index}}"-->
-    <view class="cell" wx:for="{{lists}}" bindtap="cellClick" id="{{index}}">
+    <view class="cell" wx:for="{{lists}}" wx:key="listsId" bindtap="cellClick" id="{{index}}">
         <text class="ui_name">{{item.name}}</text>
         <text class="ui_des">{{item.des}}</text>
     </view>

@@ -49,7 +49,7 @@
 <!--swiper组件-->
 <block wx:if="{{index == 2}}">
   <swiper class="swiper_class" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}} " bindchange="bindchangeTag">
-    <block wx:for="{{imgs}}">
+    <block wx:for="{{imgs}}" wx:key="imgsid">
         <swiper-item>
             <image src="{{item}}" class="slide-image"/>
         </swiper-item>
